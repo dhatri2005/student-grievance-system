@@ -23,7 +23,7 @@ CREATE TABLE `complaints` (
   `comp_date` date NOT NULL,
   `comp_status` int(10) DEFAULT NULL,
   `user_id` int(10) NOT NULL,
-  `officer_id` int(10) DEFAULT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -67,7 +67,7 @@ ALTER TABLE `admins`
 
 ALTER TABLE `complaints`
   ADD PRIMARY KEY (`comp_id`),
-  ADD KEY `officerid_fk` (`officer_id`),
+
   ADD KEY `userid_fk` (`user_id`);
 
 
@@ -110,7 +110,7 @@ ALTER TABLE `admins`
 
 
 ALTER TABLE `complaints`
-  ADD CONSTRAINT `officerid_fk` FOREIGN KEY (`officer_id`) REFERENCES `officers` (`officer_id`),
+ 
   ADD CONSTRAINT `userid_fk` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 
 
