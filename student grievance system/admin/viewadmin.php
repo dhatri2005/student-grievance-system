@@ -16,7 +16,7 @@
         <?php /*include "../inc/header.php"*/ ?>
         <h1 class="py-3 text-center">Admin list!</h1>
         <div class = "px-5">
-            <button type="button" class="btn btn-primary" onclick="location.href='/student_complaint_system/admin/index.php'">Back</button>
+           
             <div class="container px-5 my-5">
             <table class="table">
             <thead>
